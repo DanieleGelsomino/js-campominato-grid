@@ -31,3 +31,8 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.bg-skyblue {
+  background-color: skyblue;
+  color: darkred;
+}

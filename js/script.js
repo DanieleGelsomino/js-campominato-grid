@@ -20,12 +20,19 @@ const allCells = columns * rows;
 for (let i = 1; i < allCells + 1; i++) {
   // creo cella
   const cell = newCell();
+
   // aggiungo i numeri all'interno delle singole celle
   numbers = generateRange(i);
   cell.innerText = numbers;
   cell.id = numbers;
+
   // aggiungo la cella nella griglia
   grid.appendChild(cell);
+
+  // creo evento al click su cell cambiandone il bg-color
+  cell.addEventListener("click", function () {
+    cell.classList.toggle("bg-skyblue");
+  });
 }
 
 // funzione per creare cella
