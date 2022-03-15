@@ -8,3 +8,26 @@
 body {
   font-family: sans-serif;
 }
+
+/* utilities */
+
+/* content */
+
+#grid {
+  width: 800px;
+  height: 800px;
+  margin: 50px auto;
+  border: 2px solid grey;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  border: 2px solid gray;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
